@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Food Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div>
+      <h1 id="title">Food Survey Form</h1>
+    </div>
+    <div>
+    <p id="description">Give us your feedback!</p>
+    </div>
+  </header>
+
+<br>
+
+  <!-- form -->
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">
+        Name: <input required id="name" type="text" placeholder="Enter name here" class="below" />
+      </label>
+      <label id="email-label">
+        Email: <input required id="email" type="email" placeholder="example@example.com" class="below" />
+      </label>
+      <label id="number-label">
+        Age (years): <input id="number" type="number" min="18" max="120" placeholder="21" class="below" />
+      </label>
+      <label>
+        Sex:
+        <input type="radio" name="sex" value="male"/> Male
+        <input type="radio" name="sex" value="female"/> Female
+      </label>
+      What is your profession?
+        <select id="dropdown" class="below">
+          <option>Student</option>
+          <option>Teacher</option>
+          <option>Unemployed</option>
+          <option>Other</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+      How was the food?
+      <table>
+        <tr>
+          <th width="100%"></th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+        </tr>
+        <tr>
+          <td>Chicken</td>
+          <td><input type="radio" name="chicken-rating" value="1"/></td>
+          <td><input type="radio" name="chicken-rating" value="2"/></td>
+          <td><input type="radio" name="chicken-rating" value="3"/></td>
+          <td><input type="radio" name="chicken-rating" value="4"/></td>
+          <td><input type="radio" name="chicken-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Beef</td>
+          <td><input type="radio" name="beef-rating" value="1"/></td>
+          <td><input type="radio" name="beef-rating" value="2"/></td>
+          <td><input type="radio" name="beef-rating" value="3"/></td>
+          <td><input type="radio" name="beef-rating" value="4"/></td>
+          <td><input type="radio" name="beef-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Pork</td>
+          <td><input type="radio" name="pork-rating" value="1"/></td>
+          <td><input type="radio" name="pork-rating" value="2"/></td>
+          <td><input type="radio" name="pork-rating" value="3"/></td>
+          <td><input type="radio" name="pork-rating" value="4"/></td>
+          <td><input type="radio" name="pork-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Rice</td>
+          <td><input type="radio" name="rice-rating" value="1"/></td>
+          <td><input type="radio" name="rice-rating" value="2"/></td>
+          <td><input type="radio" name="rice-rating" value="3"/></td>
+          <td><input type="radio" name="rice-rating" value="4"/></td>
+          <td><input type="radio" name="rice-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Beans</td>
+          <td><input type="radio" name="beans-rating" value="1"/></td>
+          <td><input type="radio" name="beans-rating" value="2"/></td>
+          <td><input type="radio" name="beans-rating" value="3"/></td>
+          <td><input type="radio" name="beans-rating" value="4"/></td>
+          <td><input type="radio" name="beans-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Potatoes</td>
+          <td><input type="radio" name="potatoes-rating" value="1"/></td>
+          <td><input type="radio" name="potatoes-rating" value="2"/></td>
+          <td><input type="radio" name="potatoes-rating" value="3"/></td>
+          <td><input type="radio" name="potatoes-rating" value="4"/></td>
+          <td><input type="radio" name="potatoes-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Apples</td>
+          <td><input type="radio" name="apples-rating" value="1"/></td>
+          <td><input type="radio" name="apples-rating" value="2"/></td>
+          <td><input type="radio" name="apples-rating" value="3"/></td>
+          <td><input type="radio" name="apples-rating" value="4"/></td>
+          <td><input type="radio" name="apples-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Bananas</td>
+          <td><input type="radio" name="bananas-rating" value="1"/></td>
+          <td><input type="radio" name="bananas-rating" value="2"/></td>
+          <td><input type="radio" name="bananas-rating" value="3"/></td>
+          <td><input type="radio" name="bananas-rating" value="4"/></td>
+          <td><input type="radio" name="bananas-rating" value="5"/></td>
+        </tr>
+        <tr>
+          <td>Oranges</td>
+          <td><input type="radio" name="oranges-rating" value="1"/></td>
+          <td><input type="radio" name="oranges-rating" value="2"/></td>
+          <td><input type="radio" name="oranges-rating" value="3"/></td>
+          <td><input type="radio" name="oranges-rating" value="4"/></td>
+          <td><input type="radio" name="oranges-rating" value="5"/></td>
+        </tr>
+      </table>
+
+      
+    </fieldset>
+
+    <fieldset>
+      What foods would you like us to improve on? (Check all that apply)
+      <label>
+        <input type="checkbox" value="chicken" /> Chicken
+      </label>
+      <label>
+        <input type="checkbox" value="beef" /> Beef
+      </label>
+      <label>
+        <input type="checkbox" value="pork" /> Pork
+      </label>
+      <label>
+        <input type="checkbox" value="rice" /> Rice
+      </label>
+      <label>
+        <input type="checkbox" value="beans" /> Beans
+      </label>
+      <label>
+        <input type="checkbox" value="potatoes" /> Potatoes
+      </label>
+      <label>
+        <input type="checkbox" value="apples" /> Apples
+      </label>
+      <label>
+        <input type="checkbox" value="bananas" /> Bananas
+      </label>
+      <label>
+        <input type="checkbox" value="oranges" /> Oranges
+      </label>
+
+<br>
+
+      Any suggestion or additional comments would be much appreciated!
+      <label>
+        <textarea rows="3" cols="30"  class="below comment" placeholder="No additional comments... All good!"></textarea>
+      </label>
+      <input type="submit" id="submit" value="submit" />
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
